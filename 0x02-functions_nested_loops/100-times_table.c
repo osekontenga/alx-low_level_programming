@@ -1,4 +1,4 @@
-#include "main.h"
+nclude "main.h"
 /**
  * print_times_table - print multiplication table up to n
  * @n: the integer
@@ -20,27 +20,29 @@ void print_times_table(int n)
 					_putchar('0' + product);
 				else
 				{
-
 					_putchar(',');
 					_putchar(' ');
-					_putchar('0' + product);
+					if (product <= 9)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar('0' + product);
+					}
+					else if (product > 9 && product < 100)
+					{
+						_putchar(' ');
+						_putchar('0' + (product / 10));
+						_putchar('0' + (product % 10));
+					}
+					else if (product >= 100)
+					{
+						_putchar('0' + (product / 100));
+						_putchar('0' + ((product / 10) % 10));
+						_putchar('0' + (product % 10));
+					}
 				}
-				else if (product > 9 && product < 100)
-				{
-					_putchar(' ');
-					_putchar('0' + (product / 10));
-					_putchar('0' + (product % 10));
-				}
-				else if (product >= 100)
-				{
-					_putchar('0' + (product / 100));
-					_putchar('0' + ((product / 10) % 10));
-					_putchar('0' + (product % 10));
-				}
-				else
 			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
-
