@@ -22,6 +22,6 @@ int main(void)
 			sum_of_evens += sum;
 	}
 	printf("%d\n", sum_of_evens);
-	
+
 	return (0);
 }
