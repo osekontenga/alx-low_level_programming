@@ -4,6 +4,8 @@
 /**
  * reset_to_98 - converts pointers to inegers
  *
+ * n is a pointer
+ *
  * Return: Always 0.
  */
 
