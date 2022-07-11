@@ -6,7 +6,7 @@
  * b
  * Return Always 0
  */
-void swap_int(int *a, int *b)
+void swap_int(int *a, int *b)/* a & b are parameters */
 {
 	int temp = *a;
 	*a = *b;
