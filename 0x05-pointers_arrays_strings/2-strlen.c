@@ -5,6 +5,8 @@
 /**
  * _strlen - returns the length of the string
  *
+ * @s: character
+ *@strlen: description of character s
  * Return Always 0
  */
 int _strlen(char *s)
