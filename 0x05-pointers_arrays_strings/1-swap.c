@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * swap_int - swaps between int
- * @a,b
- *
+ * a
+ * b
  * Return Always 0
  */
 void swap_int(int *a, int *b)
